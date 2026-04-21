@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://tgp.golf/tgp/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://tgp.golf/tgp/about</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tgp.golf/tgp/membership</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://tgp.golf/tgp/facility</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tgp.golf/tgp/team</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://tgp.golf/tgp/leagues</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tgp.golf/tgp/lessons</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tgp.golf/tgp/events</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tgp.golf/tgp/gift-cards</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://tgp.golf/tgp/contact</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://tgp.golf/tgp/book</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://tgp.golf/fd/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://tgp.golf/fd/about</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tgp.golf/fd/membership</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://tgp.golf/fd/facility</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tgp.golf/fd/team</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://tgp.golf/fd/leagues</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tgp.golf/fd/lessons</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tgp.golf/fd/events</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tgp.golf/fd/gift-cards</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://tgp.golf/fd/contact</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://tgp.golf/fd/book</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+</urlset>
