@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Host a corporate event, birthday party, or private outing at Fairways &amp; Dreams in Conshohocken, PA. 6 TrackMan bays, a full bar, PuttView putting green, and catering through PJ Whelihan's.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Host an Event | Fairways &amp; Dreams – Conshohocken, PA</title>
+<link href="https://fonts.googleapis.com/css2?family=Gloock:ital@0;1&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+:root {
+  --pine: #1f3528; --pine-deep: #152a1e; --fern: #374e3c; --sage: #607b64; --mist: #a8bfab;
+  --gold: #b8975a; --gold-light: #cfa96e; --parchment: #f3ede0; --linen: #ede4d0; --warm-white: #f9f6ef; --ink: #1a2318;
+}
+body { background: var(--warm-white); color: var(--ink); font-family: 'Raleway', sans-serif; font-weight: 400; overflow-x: hidden; }
+a { text-decoration: none; color: inherit; } img { display: block; max-width: 100%; }
+.btn { display: inline-block; font-family: 'Raleway', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; padding: 14px 36px; transition: background 0.2s, color 0.2s; cursor: pointer; border: none; white-space: nowrap; }
+.btn-gold { background: var(--gold); color: var(--parchment); } .btn-gold:hover { background: var(--gold-light); }
+.btn-pine { background: var(--pine); color: var(--parchment); } .btn-pine:hover { background: var(--fern); }
+.btn-ghost { background: transparent; color: var(--parchment); border: 1px solid rgba(243,237,224,0.4); } .btn-ghost:hover { background: rgba(243,237,224,0.08); }
+.nav { position: fixed; top: 0; left: 0; right: 0; z-index: 200; display: flex; align-items: center; justify-content: space-between; padding: 0 clamp(20px,4vw,60px); height: 68px; background: rgba(21,42,30,0.97); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(168,191,171,0.1); }
+.nav-logo { display: flex; align-items: center; gap: 14px; flex-shrink: 0; }
+.nav-logo-sep { width: 1px; height: 28px; background: rgba(243,237,224,0.2); }
+.nav-logo-text { font-size: 9px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(243,237,224,0.45); line-height: 1; white-space: nowrap; }
+.nav-links { display: flex; align-items: center; list-style: none; }
+.nav-links a { display: flex; align-items: center; height: 68px; padding: 0 13px; font-size: 10px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(243,237,224,0.62); transition: color 0.2s; }
+.nav-links a:hover { color: var(--parchment); } .nav-links a.active { color: var(--gold); }
+.nav-book { margin-left: 16px; background: var(--gold) !important; color: var(--parchment) !important; padding: 10px 22px !important; height: auto !important; font-size: 10px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; transition: background 0.2s !important; border: none; }
+.nav-book:hover { background: var(--gold-light) !important; }
+.nav-hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 8px; background: none; border: none; }
+.nav-hamburger span { display: block; width: 24px; height: 2px; background: var(--parchment); }
+.nav-drawer { display: none; position: fixed; top: 68px; left: 0; right: 0; bottom: 0; background: var(--pine-deep); z-index: 199; flex-direction: column; padding: 40px clamp(20px,6vw,48px); overflow-y: auto; transform: translateX(100%); transition: transform 0.35s cubic-bezier(0.4,0,0.2,1); }
+.nav-drawer.open { transform: translateX(0); }
+.nav-drawer ul { list-style: none; margin-bottom: 40px; }
+.nav-drawer ul li a { display: block; font-family: 'Gloock', serif; font-style: italic; font-size: 30px; color: var(--parchment); padding: 13px 0; border-bottom: 1px solid rgba(243,237,224,0.08); opacity: 0.85; }
+.nav-drawer ul li a:hover { opacity: 1; color: var(--gold); }
+
+/* HERO */
+.page-hero { padding-top: 68px; background: var(--pine-deep); position: relative; overflow: hidden; min-height: 320px; display: flex; align-items: center; }
+.page-hero-topo { position: absolute; inset: 0; pointer-events: none; opacity: 0.27; }
+.page-hero-topo svg { width: 100%; height: 100%; }
+.page-hero-inner { position: relative; z-index: 2; max-width: 1240px; margin: 0 auto; padding: clamp(48px,7vw,88px) clamp(20px,6vw,80px); }
+.page-hero-label { display: block; font-size: 10px; font-weight: 600; letter-spacing: 0.35em; text-transform: uppercase; color: var(--gold); margin-bottom: 18px; }
+.page-hero-h1 { font-family: 'Gloock', serif; font-size: clamp(40px,6.5vw,80px); color: var(--parchment); line-height: 1.0; }
+.page-hero-h1 em { font-style: italic; color: rgba(243,237,224,0.5); }
+.page-hero-sub { font-size: clamp(15px,2vw,16px); font-weight: 400; color: rgba(243,237,224,0.6); max-width: 480px; margin-top: 18px; line-height: 1.85; }
+
+/* MAIN LAYOUT */
+.contact-wrap { max-width: 1240px; margin: 0 auto; padding: clamp(56px,9vw,112px) clamp(20px,6vw,80px); display: grid; grid-template-columns: 1fr 1.4fr; gap: clamp(48px,7vw,96px); align-items: start; }
+
+/* LEFT — CONTACT DETAILS */
+.contact-info { }
+.label-small { display: block; font-size: 10px; font-weight: 600; letter-spacing: 0.3em; text-transform: uppercase; color: var(--gold); margin-bottom: 14px; }
+.info-heading { font-family: 'Gloock', serif; font-size: clamp(26px,3.5vw,40px); color: var(--pine); line-height: 1.1; margin-bottom: 32px; }
+.info-heading em { font-style: italic; color: var(--fern); }
+
+.contact-details { display: flex; flex-direction: column; gap: 0; margin-bottom: 40px; }
+.contact-detail { display: flex; align-items: flex-start; gap: 18px; padding: 18px 0; border-bottom: 1px solid rgba(31,53,40,0.08); }
+.contact-detail:first-child { border-top: 1px solid rgba(31,53,40,0.08); }
+.detail-icon { width: 36px; height: 36px; border: 1px solid rgba(31,53,40,0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 14px; color: var(--sage); font-family: 'Gloock', serif; font-style: italic; }
+.detail-label { font-size: 9px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--sage); margin-bottom: 4px; }
+.detail-value { font-size: 15px; color: var(--pine); font-weight: 400; transition: color 0.2s; }
+a.detail-value:hover { color: var(--gold); }
+
+.hours-block { }
+.hours-heading { font-size: 10px; font-weight: 600; letter-spacing: 0.25em; text-transform: uppercase; color: var(--sage); margin-bottom: 16px; }
+.hours-table { }
+.hours-row { display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-bottom: 1px solid rgba(31,53,40,0.07); font-size: 14px; color: #5a6e5a; }
+.hours-row:last-child { border-bottom: none; }
+
+.sister-card { margin-top: 40px; background: var(--pine); padding: 24px 28px; }
+.sister-label { font-size: 9px; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; display: block; }
+.sister-name { font-family: 'Gloock', serif; font-style: italic; font-size: 20px; color: var(--parchment); margin-bottom: 4px; }
+.sister-addr { font-size: 15px; color: rgba(243,237,224,0.55); margin-bottom: 16px; }
+
+/* RIGHT — FORM */
+.contact-form-wrap { background: var(--parchment); padding: clamp(36px,4.5vw,52px) clamp(28px,4vw,44px); }
+.form-heading { font-family: 'Gloock', serif; font-size: clamp(22px,3vw,30px); color: var(--pine); margin-bottom: 6px; }
+.form-sub { font-size: 15px; color: #5a6e5a; line-height: 1.7; margin-bottom: 32px; }
+
+.form-group { margin-bottom: 20px; }
+.form-label { display: block; font-size: 10px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--sage); margin-bottom: 8px; }
+.form-input { width: 100%; background: var(--warm-white); border: 1px solid rgba(31,53,40,0.12); padding: 13px 16px; font-family: 'Raleway', sans-serif; font-size: 14px; color: var(--ink); outline: none; transition: border-color 0.2s; }
+.form-input:focus { border-color: var(--pine); }
+textarea.form-input { resize: vertical; min-height: 120px; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.form-select { appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23607b64' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 14px center; }
+.form-submit { width: 100%; margin-top: 8px; }
+
+/* SUCCESS STATE */
+.form-success { display: none; text-align: center; padding: 40px 20px; }
+.form-success-icon { font-family: 'Gloock', serif; font-style: italic; font-size: 48px; color: var(--gold); margin-bottom: 16px; }
+.form-success h3 { font-family: 'Gloock', serif; font-size: 24px; color: var(--pine); margin-bottom: 10px; }
+.form-success p { font-size: 14px; color: #5a6e5a; line-height: 1.7; }
+
+/* FOOTER */
+footer { background: var(--pine-deep); padding: clamp(48px,7vw,80px) clamp(20px,6vw,80px); border-top: 1px solid rgba(243,237,224,0.06); }
+.footer-grid { max-width: 1240px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr; gap: clamp(32px,5vw,60px); }
+.footer-tag { font-size: 14px; color: rgba(243,237,224,0.3); line-height: 1.85; max-width: 260px; }
+.footer-head { display: block; font-size: 9px; font-weight: 600; letter-spacing: 0.25em; text-transform: uppercase; color: rgba(243,237,224,0.3); margin-bottom: 20px; }
+footer ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+footer ul a { font-size: 14px; color: rgba(243,237,224,0.55); transition: color 0.2s; }
+footer ul a:hover { color: var(--parchment); }
+.footer-bottom { max-width: 1240px; margin: 36px auto 0; padding-top: 28px; border-top: 1px solid rgba(243,237,224,0.06); display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; font-size: 11px; color: rgba(243,237,224,0.2); }
+
+.reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
+@media (max-width: 960px) {
+  .nav-links { display: none; } .nav-hamburger { display: flex; } .nav-drawer { display: flex; }
+  .contact-wrap { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .footer-grid > :first-child { grid-column: 1 / -1; }
+}
+@media (max-width: 560px) {
+  .form-row { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .footer-bottom { flex-direction: column; align-items: flex-start; }
+}
+
+/* Equal width stacked buttons */
+@media (max-width: 560px) {
+  .btn-row .btn,
+  .cta-band-inner .btn,
+  [style*="display:flex"] .btn,
+  [style*="display: flex"] .btn {
+    flex: 1 1 auto;
+    text-align: center;
+    min-width: 140px;
+  }
+}
+
+
+/* ── Host an Event Page ──────────────────── */
+.event-hero { padding: 120px 24px 80px; text-align: center; background: var(--color-dark); color: var(--color-light); }
+.event-hero .page-label { font-size: 11px; letter-spacing: .18em; text-transform: uppercase; opacity: .55; margin-bottom: 18px; }
+.event-hero h1 { font-family: var(--font-display); font-size: clamp(2.8rem,6vw,5rem); line-height: 1.05; margin-bottom: 24px; }
+.event-hero h1 em { font-style: italic; color: var(--color-accent-light, #b5a07a); }
+.event-hero .hero-sub { max-width: 560px; margin: 0 auto 40px; opacity: .8; line-height: 1.7; }
+.event-hero .hero-ctas { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+.event-section { padding: 80px 24px; max-width: 1100px; margin: 0 auto; }
+.event-section.alt-bg { max-width: 100%; background: var(--color-surface, #f7f4ef); padding: 80px 24px; }
+.event-section.alt-bg .event-section-inner { max-width: 1100px; margin: 0 auto; }
+.event-section-label { font-size: 11px; letter-spacing: .18em; text-transform: uppercase; opacity: .5; margin-bottom: 16px; }
+.event-section h2 { font-family: var(--font-display); font-size: clamp(1.8rem,3.5vw,2.8rem); line-height: 1.1; margin-bottom: 24px; }
+.event-section h2 em { font-style: italic; }
+.event-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 32px; margin-top: 48px; }
+.event-card { background: #fff; border-radius: 12px; padding: 36px 32px; border: 1px solid rgba(0,0,0,.07); }
+.event-card-icon { width: 44px; height: 44px; border-radius: 50%; background: var(--color-dark); display: flex; align-items: center; justify-content: center; margin-bottom: 20px; }
+.event-card-icon svg { width: 20px; height: 20px; stroke: #fff; fill: none; }
+.event-card h3 { font-family: var(--font-display); font-size: 1.25rem; margin-bottom: 10px; }
+.event-card p { font-size: .93rem; line-height: 1.65; opacity: .75; }
+.event-split { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+.event-split img { width: 100%; border-radius: 12px; object-fit: cover; aspect-ratio: 4/3; }
+.event-split-text h2 { font-family: var(--font-display); font-size: clamp(1.8rem,3vw,2.6rem); line-height: 1.1; margin-bottom: 20px; }
+.event-split-text h2 em { font-style: italic; }
+.event-split-text p { line-height: 1.75; opacity: .75; margin-bottom: 16px; }
+.event-split-text .detail-list { list-style: none; padding: 0; margin: 24px 0; }
+.event-split-text .detail-list li { display: flex; align-items: center; gap: 10px; font-size: .93rem; margin-bottom: 10px; opacity: .8; }
+.event-split-text .detail-list li::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--color-dark); flex-shrink: 0; }
+.event-stats { display: flex; gap: 40px; flex-wrap: wrap; margin: 32px 0; }
+.event-stat-num { font-family: var(--font-display); font-size: 2.2rem; line-height: 1; }
+.event-stat-label { font-size: .8rem; text-transform: uppercase; letter-spacing: .1em; opacity: .55; margin-top: 4px; }
+.event-inquiry { background: var(--color-dark); color: var(--color-light); padding: 80px 24px; text-align: center; }
+.event-inquiry h2 { font-family: var(--font-display); font-size: clamp(1.8rem,3.5vw,2.8rem); margin-bottom: 16px; }
+.event-inquiry h2 em { font-style: italic; }
+.event-inquiry p { opacity: .75; max-width: 480px; margin: 0 auto 36px; line-height: 1.7; }
+.event-inquiry .btn-row { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+@media (max-width: 768px) {
+  .event-split { grid-template-columns: 1fr; }
+  .event-split img { order: -1; }
+}
+
+</style>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+  <link rel="canonical" href="https://tgp.golf/fd/host-an-event"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:site_name" content="Fairways &amp; Dreams"/>
+  <meta property="og:url" content="https://tgp.golf/fd/host-an-event"/>
+  <meta property="og:title" content="Host an Event | Fairways &amp; Dreams"/>
+  <meta property="og:description" content="Host your next event at Fairways &amp; Dreams — 6 TrackMan bays, full bar, PuttView, and PJ Whelihan's catering in Conshohocken, PA."/>
+  <meta property="og:image" content="https://tgp.golf/images/fairways-and-dreams-simulator-bay.jpg"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Host an Event | Fairways &amp; Dreams"/>
+  <meta name="twitter:description" content="Host your next event at Fairways &amp; Dreams — 6 TrackMan bays, full bar, PuttView, and PJ Whelihan's catering in Conshohocken, PA."/>
+  <meta name="twitter:image" content="https://tgp.golf/images/fairways-and-dreams-simulator-bay.jpg"/>
+
+</head>
+<body>
+<nav class="nav">
+  <a href="../index.html" class="nav-logo">
+    <img src="/images/fd-logo.png" alt="Fairways &amp; Dreams" style="height:52px;width:auto;display:block;filter:none;padding:6px 0;"/>
+    <div class="nav-logo-sep"></div>
+    <div class="nav-logo-text">Fairways &amp; Dreams</div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="membership.html">Membership</a></li>
+    <li><a href="facility.html">Facility</a></li>
+    <li><a href="team.html">Team</a></li>
+        <li><a href="leagues.html">Leagues</a></li>
+    <li><a href="lessons.html">Lessons</a></li>
+    <li><a href="events.html">Events</a></li>
+    <li><a href="gift-cards.html">Gift Cards</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+    <li><a href="book.html" class="nav-book">Book Now</a></li>
+  </ul>
+  <button class="nav-hamburger" onclick="toggleDrawer()" aria-label="Open menu"><span></span><span></span><span></span></button>
+</nav>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Contact Fairways &amp; Dreams in Conshohocken, PA — Montgomery County's indoor golf simulator. Call, email or visit us at 200 Ridge Pike, Conshohocken PA 19428.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Fairways &amp; Dreams | Golf Simulators in Conshohocken, PA</title>
+<link href="https://fonts.googleapis.com/css2?family=Gloock:ital@0;1&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+:root {
+  --pine: #1f3528; --pine-deep: #152a1e; --fern: #374e3c; --sage: #607b64; --mist: #a8bfab;
+  --gold: #b8975a; --gold-light: #cfa96e; --parchment: #f3ede0; --linen: #ede4d0; --warm-white: #f9f6ef; --ink: #1a2318;
+}
+body { background: var(--warm-white); color: var(--ink); font-family: 'Raleway', sans-serif; font-weight: 400; overflow-x: hidden; }
+a { text-decoration: none; color: inherit; } img { display: block; max-width: 100%; }
+.btn { display: inline-block; font-family: 'Raleway', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; padding: 14px 36px; transition: background 0.2s, color 0.2s; cursor: pointer; border: none; white-space: nowrap; }
+.btn-gold { background: var(--gold); color: var(--parchment); } .btn-gold:hover { background: var(--gold-light); }
+.btn-pine { background: var(--pine); color: var(--parchment); } .btn-pine:hover { background: var(--fern); }
+.btn-ghost { background: transparent; color: var(--parchment); border: 1px solid rgba(243,237,224,0.4); } .btn-ghost:hover { background: rgba(243,237,224,0.08); }
+.nav { position: fixed; top: 0; left: 0; right: 0; z-index: 200; display: flex; align-items: center; justify-content: space-between; padding: 0 clamp(20px,4vw,60px); height: 68px; background: rgba(21,42,30,0.97); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(168,191,171,0.1); }
+.nav-logo { display: flex; align-items: center; gap: 14px; flex-shrink: 0; }
+.nav-logo-sep { width: 1px; height: 28px; background: rgba(243,237,224,0.2); }
+.nav-logo-text { font-size: 9px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(243,237,224,0.45); line-height: 1; white-space: nowrap; }
+.nav-links { display: flex; align-items: center; list-style: none; }
+.nav-links a { display: flex; align-items: center; height: 68px; padding: 0 13px; font-size: 10px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(243,237,224,0.62); transition: color 0.2s; }
+.nav-links a:hover { color: var(--parchment); } .nav-links a.active { color: var(--gold); }
+.nav-book { margin-left: 16px; background: var(--gold) !important; color: var(--parchment) !important; padding: 10px 22px !important; height: auto !important; font-size: 10px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; transition: background 0.2s !important; border: none; }
+.nav-book:hover { background: var(--gold-light) !important; }
+.nav-hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 8px; background: none; border: none; }
+.nav-hamburger span { display: block; width: 24px; height: 2px; background: var(--parchment); }
+.nav-drawer { display: none; position: fixed; top: 68px; left: 0; right: 0; bottom: 0; background: var(--pine-deep); z-index: 199; flex-direction: column; padding: 40px clamp(20px,6vw,48px); overflow-y: auto; transform: translateX(100%); transition: transform 0.35s cubic-bezier(0.4,0,0.2,1); }
+.nav-drawer.open { transform: translateX(0); }
+.nav-drawer ul { list-style: none; margin-bottom: 40px; }
+.nav-drawer ul li a { display: block; font-family: 'Gloock', serif; font-style: italic; font-size: 30px; color: var(--parchment); padding: 13px 0; border-bottom: 1px solid rgba(243,237,224,0.08); opacity: 0.85; }
+.nav-drawer ul li a:hover { opacity: 1; color: var(--gold); }
+
+/* HERO */
+.page-hero { padding-top: 68px; background: var(--pine-deep); position: relative; overflow: hidden; min-height: 320px; display: flex; align-items: center; }
+.page-hero-topo { position: absolute; inset: 0; pointer-events: none; opacity: 0.27; }
+.page-hero-topo svg { width: 100%; height: 100%; }
+.page-hero-inner { position: relative; z-index: 2; max-width: 1240px; margin: 0 auto; padding: clamp(48px,7vw,88px) clamp(20px,6vw,80px); }
+.page-hero-label { display: block; font-size: 10px; font-weight: 600; letter-spacing: 0.35em; text-transform: uppercase; color: var(--gold); margin-bottom: 18px; }
+.page-hero-h1 { font-family: 'Gloock', serif; font-size: clamp(40px,6.5vw,80px); color: var(--parchment); line-height: 1.0; }
+.page-hero-h1 em { font-style: italic; color: rgba(243,237,224,0.5); }
+.page-hero-sub { font-size: clamp(15px,2vw,16px); font-weight: 400; color: rgba(243,237,224,0.6); max-width: 480px; margin-top: 18px; line-height: 1.85; }
+
+/* MAIN LAYOUT */
+.contact-wrap { max-width: 1240px; margin: 0 auto; padding: clamp(56px,9vw,112px) clamp(20px,6vw,80px); display: grid; grid-template-columns: 1fr 1.4fr; gap: clamp(48px,7vw,96px); align-items: start; }
+
+/* LEFT — CONTACT DETAILS */
+.contact-info { }
+.label-small { display: block; font-size: 10px; font-weight: 600; letter-spacing: 0.3em; text-transform: uppercase; color: var(--gold); margin-bottom: 14px; }
+.info-heading { font-family: 'Gloock', serif; font-size: clamp(26px,3.5vw,40px); color: var(--pine); line-height: 1.1; margin-bottom: 32px; }
+.info-heading em { font-style: italic; color: var(--fern); }
+
+.contact-details { display: flex; flex-direction: column; gap: 0; margin-bottom: 40px; }
+.contact-detail { display: flex; align-items: flex-start; gap: 18px; padding: 18px 0; border-bottom: 1px solid rgba(31,53,40,0.08); }
+.contact-detail:first-child { border-top: 1px solid rgba(31,53,40,0.08); }
+.detail-icon { width: 36px; height: 36px; border: 1px solid rgba(31,53,40,0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 14px; color: var(--sage); font-family: 'Gloock', serif; font-style: italic; }
+.detail-label { font-size: 9px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--sage); margin-bottom: 4px; }
+.detail-value { font-size: 15px; color: var(--pine); font-weight: 400; transition: color 0.2s; }
+a.detail-value:hover { color: var(--gold); }
+
+.hours-block { }
+.hours-heading { font-size: 10px; font-weight: 600; letter-spacing: 0.25em; text-transform: uppercase; color: var(--sage); margin-bottom: 16px; }
+.hours-table { }
+.hours-row { display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-bottom: 1px solid rgba(31,53,40,0.07); font-size: 14px; color: #5a6e5a; }
+.hours-row:last-child { border-bottom: none; }
+
+.sister-card { margin-top: 40px; background: var(--pine); padding: 24px 28px; }
+.sister-label { font-size: 9px; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; display: block; }
+.sister-name { font-family: 'Gloock', serif; font-style: italic; font-size: 20px; color: var(--parchment); margin-bottom: 4px; }
+.sister-addr { font-size: 15px; color: rgba(243,237,224,0.55); margin-bottom: 16px; }
+
+/* RIGHT — FORM */
+.contact-form-wrap { background: var(--parchment); padding: clamp(36px,4.5vw,52px) clamp(28px,4vw,44px); }
+.form-heading { font-family: 'Gloock', serif; font-size: clamp(22px,3vw,30px); color: var(--pine); margin-bottom: 6px; }
+.form-sub { font-size: 15px; color: #5a6e5a; line-height: 1.7; margin-bottom: 32px; }
+
+.form-group { margin-bottom: 20px; }
+.form-label { display: block; font-size: 10px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--sage); margin-bottom: 8px; }
+.form-input { width: 100%; background: var(--warm-white); border: 1px solid rgba(31,53,40,0.12); padding: 13px 16px; font-family: 'Raleway', sans-serif; font-size: 14px; color: var(--ink); outline: none; transition: border-color 0.2s; }
+.form-input:focus { border-color: var(--pine); }
+textarea.form-input { resize: vertical; min-height: 120px; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.form-select { appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23607b64' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 14px center; }
+.form-submit { width: 100%; margin-top: 8px; }
+
+/* SUCCESS STATE */
+.form-success { display: none; text-align: center; padding: 40px 20px; }
+.form-success-icon { font-family: 'Gloock', serif; font-style: italic; font-size: 48px; color: var(--gold); margin-bottom: 16px; }
+.form-success h3 { font-family: 'Gloock', serif; font-size: 24px; color: var(--pine); margin-bottom: 10px; }
+.form-success p { font-size: 14px; color: #5a6e5a; line-height: 1.7; }
+
+/* FOOTER */
+footer { background: var(--pine-deep); padding: clamp(48px,7vw,80px) clamp(20px,6vw,80px); border-top: 1px solid rgba(243,237,224,0.06); }
+.footer-grid { max-width: 1240px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr; gap: clamp(32px,5vw,60px); }
+.footer-tag { font-size: 14px; color: rgba(243,237,224,0.3); line-height: 1.85; max-width: 260px; }
+.footer-head { display: block; font-size: 9px; font-weight: 600; letter-spacing: 0.25em; text-transform: uppercase; color: rgba(243,237,224,0.3); margin-bottom: 20px; }
+footer ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+footer ul a { font-size: 14px; color: rgba(243,237,224,0.55); transition: color 0.2s; }
+footer ul a:hover { color: var(--parchment); }
+.footer-bottom { max-width: 1240px; margin: 36px auto 0; padding-top: 28px; border-top: 1px solid rgba(243,237,224,0.06); display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; font-size: 11px; color: rgba(243,237,224,0.2); }
+
+.reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
+@media (max-width: 960px) {
+  .nav-links { display: none; } .nav-hamburger { display: flex; } .nav-drawer { display: flex; }
+  .contact-wrap { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .footer-grid > :first-child { grid-column: 1 / -1; }
+}
+@media (max-width: 560px) {
+  .form-row { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .footer-bottom { flex-direction: column; align-items: flex-start; }
+}
+
+/* Equal width stacked buttons */
+@media (max-width: 560px) {
+  .btn-row .btn,
+  .cta-band-inner .btn,
+  [style*="display:flex"] .btn,
+  [style*="display: flex"] .btn {
+    flex: 1 1 auto;
+    text-align: center;
+    min-width: 140px;
+  }
+}
+
+</style>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+  <link rel="canonical" href="https://tgp.golf/fd/contact"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:site_name" content="Fairways &amp; Dreams"/>
+  <meta property="og:url" content="https://tgp.golf/fd/contact"/>
+  <meta property="og:title" content="Contact Fairways &amp; Dreams"/>
+  <meta property="og:description" content="Contact Fairways &amp; Dreams in Conshohocken, PA — Montgomery County's indoor golf simulator."/>
+  <meta property="og:image" content="https://tgp.golf/images/fairways-and-dreams-simulator-bay.jpg"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Contact Fairways &amp; Dreams"/>
+  <meta name="twitter:description" content="Contact Fairways &amp; Dreams in Conshohocken — Montgomery County's indoor golf simulator."/>
+  <meta name="twitter:image" content="https://tgp.golf/images/fairways-and-dreams-simulator-bay.jpg"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SportsActivityLocation",
+  "name": "Fairways & Dreams",
+  "url": "https://tgp.golf/fd/",
+  "telephone": "+16102346739",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "200 Ridge Pike, Suite 206",
+    "addressLocality": "Conshohocken",
+    "addressRegion": "PA",
+    "postalCode": "19428",
+    "addressCountry": "US"
+  },
+  "geo": {"@type": "GeoCoordinates", "latitude": 40.0787, "longitude": -75.3017},
+  "areaServed": {"@type": "AdministrativeArea", "name": "Montgomery County"}
+}
+</script>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="../index.html" class="nav-logo">
+    <img src="/images/fd-logo.png" alt="Fairways &amp; Dreams" style="height:52px;width:auto;display:block;filter:none;padding:6px 0;"/>
+    <div class="nav-logo-sep"></div>
+    <div class="nav-logo-text">Fairways &amp; Dreams</div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="membership.html">Membership</a></li>
+    <li><a href="facility.html">Facility</a></li>
+    <li><a href="team.html">Team</a></li>
+        <li><a href="leagues.html">Leagues</a></li>
+    <li><a href="lessons.html">Lessons</a></li>
+    <li><a href="events.html">Events</a></li>
+    <li><a href="gift-cards.html">Gift Cards</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+    <li><a href="book.html" class="nav-book">Book Now</a></li>
+  </ul>
+  <button class="nav-hamburger" onclick="toggleDrawer()" aria-label="Open menu"><span></span><span></span><span></span></button>
+</nav>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Contact Fairways &amp; Dreams in Conshohocken, PA — Montgomery County's indoor golf simulator. Call, email or visit us at 200 Ridge Pike, Conshohocken PA 19428.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Fairways &amp; Dreams | Golf Simulators in Conshohocken, PA</title>
+<link href="https://fonts.googleapis.com/css2?family=Gloock:ital@0;1&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+:root {
+  --pine: #1f3528; --pine-deep: #152a1e; --fern: #374e3c; --sage: #607b64; --mist: #a8bfab;
+  --gold: #b8975a; --gold-light: #cfa96e; --parchment: #f3ede0; --linen: #ede4d0; --warm-white: #f9f6ef; --ink: #1a2318;
+}
+body { background: var(--warm-white); color: var(--ink); font-family: 'Raleway', sans-serif; font-weight: 400; overflow-x: hidden; }
+a { text-decoration: none; color: inherit; } img { display: block; max-width: 100%; }
+.btn { display: inline-block; font-family: 'Raleway', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; padding: 14px 36px; transition: background 0.2s, color 0.2s; cursor: pointer; border: none; white-space: nowrap; }
+.btn-gold { background: var(--gold); color: var(--parchment); } .btn-gold:hover { background: var(--gold-light); }
+.btn-pine { background: var(--pine); color: var(--parchment); } .btn-pine:hover { background: var(--fern); }
+.btn-ghost { background: transparent; color: var(--parchment); border: 1px solid rgba(243,237,224,0.4); } .btn-ghost:hover { background: rgba(243,237,224,0.08); }
+.nav { position: fixed; top: 0; left: 0; right: 0; z-index: 200; display: flex; align-items: center; justify-content: space-between; padding: 0 clamp(20px,4vw,60px); height: 68px; background: rgba(21,42,30,0.97); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(168,191,171,0.1); }
+.nav-logo { display: flex; align-items: center; gap: 14px; flex-shrink: 0; }
+.nav-logo-sep { width: 1px; height: 28px; background: rgba(243,237,224,0.2); }
+.nav-logo-text { font-size: 9px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(243,237,224,0.45); line-height: 1; white-space: nowrap; }
+.nav-links { display: flex; align-items: center; list-style: none; }
+.nav-links a { display: flex; align-items: center; height: 68px; padding: 0 13px; font-size: 10px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(243,237,224,0.62); transition: color 0.2s; }
+.nav-links a:hover { color: var(--parchment); } .nav-links a.active { color: var(--gold); }
+.nav-book { margin-left: 16px; background: var(--gold) !important; color: var(--parchment) !important; padding: 10px 22px !important; height: auto !important; font-size: 10px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; transition: background 0.2s !important; border: none; }
+.nav-book:hover { background: var(--gold-light) !important; }
+.nav-hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 8px; background: none; border: none; }
+.nav-hamburger span { display: block; width: 24px; height: 2px; background: var(--parchment); }
+.nav-drawer { display: none; position: fixed; top: 68px; left: 0; right: 0; bottom: 0; background: var(--pine-deep); z-index: 199; flex-direction: column; padding: 40px clamp(20px,6vw,48px); overflow-y: auto; transform: translateX(100%); transition: transform 0.35s cubic-bezier(0.4,0,0.2,1); }
+.nav-drawer.open { transform: translateX(0); }
+.nav-drawer ul { list-style: none; margin-bottom: 40px; }
+.nav-drawer ul li a { display: block; font-family: 'Gloock', serif; font-style: italic; font-size: 30px; color: var(--parchment); padding: 13px 0; border-bottom: 1px solid rgba(243,237,224,0.08); opacity: 0.85; }
+.nav-drawer ul li a:hover { opacity: 1; color: var(--gold); }
+
+/* HERO */
+.page-hero { padding-top: 68px; background: var(--pine-deep); position: relative; overflow: hidden; min-height: 320px; display: flex; align-items: center; }
+.page-hero-topo { position: absolute; inset: 0; pointer-events: none; opacity: 0.27; }
+.page-hero-topo svg { width: 100%; height: 100%; }
+.page-hero-inner { position: relative; z-index: 2; max-width: 1240px; margin: 0 auto; padding: clamp(48px,7vw,88px) clamp(20px,6vw,80px); }
+.page-hero-label { display: block; font-size: 10px; font-weight: 600; letter-spacing: 0.35em; text-transform: uppercase; color: var(--gold); margin-bottom: 18px; }
+.page-hero-h1 { font-family: 'Gloock', serif; font-size: clamp(40px,6.5vw,80px); color: var(--parchment); line-height: 1.0; }
+.page-hero-h1 em { font-style: italic; color: rgba(243,237,224,0.5); }
+.page-hero-sub { font-size: clamp(15px,2vw,16px); font-weight: 400; color: rgba(243,237,224,0.6); max-width: 480px; margin-top: 18px; line-height: 1.85; }
+
+/* MAIN LAYOUT */
+.contact-wrap { max-width: 1240px; margin: 0 auto; padding: clamp(56px,9vw,112px) clamp(20px,6vw,80px); display: grid; grid-template-columns: 1fr 1.4fr; gap: clamp(48px,7vw,96px); align-items: start; }
+
+/* LEFT — CONTACT DETAILS */
+.contact-info { }
+.label-small { display: block; font-size: 10px; font-weight: 600; letter-spacing: 0.3em; text-transform: uppercase; color: var(--gold); margin-bottom: 14px; }
+.info-heading { font-family: 'Gloock', serif; font-size: clamp(26px,3.5vw,40px); color: var(--pine); line-height: 1.1; margin-bottom: 32px; }
+.info-heading em { font-style: italic; color: var(--fern); }
+
+.contact-details { display: flex; flex-direction: column; gap: 0; margin-bottom: 40px; }
+.contact-detail { display: flex; align-items: flex-start; gap: 18px; padding: 18px 0; border-bottom: 1px solid rgba(31,53,40,0.08); }
+.contact-detail:first-child { border-top: 1px solid rgba(31,53,40,0.08); }
+.detail-icon { width: 36px; height: 36px; border: 1px solid rgba(31,53,40,0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 14px; color: var(--sage); font-family: 'Gloock', serif; font-style: italic; }
+.detail-label { font-size: 9px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--sage); margin-bottom: 4px; }
+.detail-value { font-size: 15px; color: var(--pine); font-weight: 400; transition: color 0.2s; }
+a.detail-value:hover { color: var(--gold); }
+
+.hours-block { }
+.hours-heading { font-size: 10px; font-weight: 600; letter-spacing: 0.25em; text-transform: uppercase; color: var(--sage); margin-bottom: 16px; }
+.hours-table { }
+.hours-row { display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-bottom: 1px solid rgba(31,53,40,0.07); font-size: 14px; color: #5a6e5a; }
+.hours-row:last-child { border-bottom: none; }
+
+.sister-card { margin-top: 40px; background: var(--pine); padding: 24px 28px; }
+.sister-label { font-size: 9px; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; display: block; }
+.sister-name { font-family: 'Gloock', serif; font-style: italic; font-size: 20px; color: var(--parchment); margin-bottom: 4px; }
+.sister-addr { font-size: 15px; color: rgba(243,237,224,0.55); margin-bottom: 16px; }
+
+/* RIGHT — FORM */
+.contact-form-wrap { background: var(--parchment); padding: clamp(36px,4.5vw,52px) clamp(28px,4vw,44px); }
+.form-heading { font-family: 'Gloock', serif; font-size: clamp(22px,3vw,30px); color: var(--pine); margin-bottom: 6px; }
+.form-sub { font-size: 15px; color: #5a6e5a; line-height: 1.7; margin-bottom: 32px; }
+
+.form-group { margin-bottom: 20px; }
+.form-label { display: block; font-size: 10px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--sage); margin-bottom: 8px; }
+.form-input { width: 100%; background: var(--warm-white); border: 1px solid rgba(31,53,40,0.12); padding: 13px 16px; font-family: 'Raleway', sans-serif; font-size: 14px; color: var(--ink); outline: none; transition: border-color 0.2s; }
+.form-input:focus { border-color: var(--pine); }
+textarea.form-input { resize: vertical; min-height: 120px; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.form-select { appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23607b64' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 14px center; }
+.form-submit { width: 100%; margin-top: 8px; }
+
+/* SUCCESS STATE */
+.form-success { display: none; text-align: center; padding: 40px 20px; }
+.form-success-icon { font-family: 'Gloock', serif; font-style: italic; font-size: 48px; color: var(--gold); margin-bottom: 16px; }
+.form-success h3 { font-family: 'Gloock', serif; font-size: 24px; color: var(--pine); margin-bottom: 10px; }
+.form-success p { font-size: 14px; color: #5a6e5a; line-height: 1.7; }
+
+/* FOOTER */
+footer { background: var(--pine-deep); padding: clamp(48px,7vw,80px) clamp(20px,6vw,80px); border-top: 1px solid rgba(243,237,224,0.06); }
+.footer-grid { max-width: 1240px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr; gap: clamp(32px,5vw,60px); }
+.footer-tag { font-size: 14px; color: rgba(243,237,224,0.3); line-height: 1.85; max-width: 260px; }
+.footer-head { display: block; font-size: 9px; font-weight: 600; letter-spacing: 0.25em; text-transform: uppercase; color: rgba(243,237,224,0.3); margin-bottom: 20px; }
+footer ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+footer ul a { font-size: 14px; color: rgba(243,237,224,0.55); transition: color 0.2s; }
+footer ul a:hover { color: var(--parchment); }
+.footer-bottom { max-width: 1240px; margin: 36px auto 0; padding-top: 28px; border-top: 1px solid rgba(243,237,224,0.06); display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; font-size: 11px; color: rgba(243,237,224,0.2); }
+
+.reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
+@media (max-width: 960px) {
+  .nav-links { display: none; } .nav-hamburger { display: flex; } .nav-drawer { display: flex; }
+  .contact-wrap { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .footer-grid > :first-child { grid-column: 1 / -1; }
+}
+@media (max-width: 560px) {
+  .form-row { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .footer-bottom { flex-direction: column; align-items: flex-start; }
+}
+
+/* Equal width stacked buttons */
+@media (max-width: 560px) {
+  .btn-row .btn,
+  .cta-band-inner .btn,
+  [style*="display:flex"] .btn,
+  [style*="display: flex"] .btn {
+    flex: 1 1 auto;
+    text-align: center;
+    min-width: 140px;
+  }
+}
+
+</style>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+  <link rel="canonical" href="https://tgp.golf/fd/contact"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:site_name" content="Fairways &amp; Dreams"/>
+  <meta property="og:url" content="https://tgp.golf/fd/contact"/>
+  <meta property="og:title" content="Contact Fairways &amp; Dreams"/>
+  <meta property="og:description" content="Contact Fairways &amp; Dreams in Conshohocken, PA — Montgomery County's indoor golf simulator."/>
+  <meta property="og:image" content="https://tgp.golf/images/fairways-and-dreams-simulator-bay.jpg"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Contact Fairways &amp; Dreams"/>
+  <meta name="twitter:description" content="Contact Fairways &amp; Dreams in Conshohocken — Montgomery County's indoor golf simulator."/>
+  <meta name="twitter:image" content="https://tgp.golf/images/fairways-and-dreams-simulator-bay.jpg"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SportsActivityLocation",
+  "name": "Fairways & Dreams",
+  "url": "https://tgp.golf/fd/",
+  "telephone": "+16102346739",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "200 Ridge Pike, Suite 206",
+    "addressLocality": "Conshohocken",
+    "addressRegion": "PA",
+    "postalCode": "19428",
+    "addressCountry": "US"
+  },
+  "geo": {"@type": "GeoCoordinates", "latitude": 40.0787, "longitude": -75.3017},
+  "areaServed": {"@type": "AdministrativeArea", "name": "Montgomery County"}
+}
+</script>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="../index.html" class="nav-logo">
+    <img src="/images/fd-logo.png" alt="Fairways &amp; Dreams" style="height:52px;width:auto;display:block;filter:none;padding:6px 0;"/>
+    <div class="nav-logo-sep"></div>
+
+<!-- HERO -->
+<section class="event-hero reveal">
+  <div class="page-label">Private Events</div>
+  <h1>Your event.<em>Our venue.</em></h1>
+  <p class="hero-sub">A full bar, six TrackMan bays, a PuttView putting green, and catering from PJ Whelihan's. Fairways & Dreams is Montgomery County's most unique private event space.</p>
+  <div class="hero-ctas">
+    <a href="contact.html" class="btn btn-primary">Inquire About Your Event</a>
+    <a href="facility.html" class="btn btn-outline-light">View the Facility</a>
+  </div>
+</section>
+
+<!-- WHAT WE OFFER -->
+<div class="event-section">
+  <div class="event-section-label">What We Offer</div>
+  <h2>Golf, drinks, and great food —<em> all in one place.</em></h2>
+  <p style="max-width:600px;line-height:1.75;opacity:.75;">Fairways & Dreams combines a premium golf simulator facility with a full bar and private event space. Six TrackMan bays, PuttView putting green, PJ Whelihan's catering, and an atmosphere that makes every event feel like a real night out.</p>
+  <div class="event-grid">
+    <div class="event-card reveal">
+      <div class="event-card-icon"><svg viewBox="0 0 24 24" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg></div>
+      <h3>Private Venue Hire</h3>
+      <p>Book the whole facility for your group — simulators, bar, putting green, and event space. Total privacy for the duration of your event.</p>
+    </div>
+    <div class="event-card reveal">
+      <div class="event-card-icon"><svg viewBox="0 0 24 24" stroke-width="1.5"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg></div>
+      <h3>Full Bar & Party Area</h3>
+      <p>One of the things that sets Fairways & Dreams apart — a full bar setup and dedicated party area right alongside the simulators. Food, drinks, and golf in one space.</p>
+    </div>
+    <div class="event-card reveal">
+      <div class="event-card-icon"><svg viewBox="0 0 24 24" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div>
+      <h3>PJ Whelihan's Catering</h3>
+      <p>Order from PJ Whelihan's directly to your event — wings, sliders, shareable platters, the full menu. Delivered straight to your bays so the game never stops.</p>
+    </div>
+    <div class="event-card reveal">
+      <div class="event-card-icon"><svg viewBox="0 0 24 24" stroke-width="1.5"><circle cx="12" cy="5" r="3"/><path d="M12 8v13"/><path d="M5 13l7-5 7 5"/></svg></div>
+      <h3>PuttView Putting Green</h3>
+      <p>Fairways & Dreams now has PuttView — augmented reality putting that adds a whole new dimension to your event. Putting contests and games available for all skill levels.</p>
+    </div>
+    <div class="event-card reveal">
+      <div class="event-card-icon"><svg viewBox="0 0 24 24" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+      <h3>Corporate Outings</h3>
+      <p>Team-building, client entertainment, or company celebrations — the bar, simulators, and putting green create a complete experience your guests won't forget.</p>
+    </div>
+    <div class="event-card reveal">
+      <div class="event-card-icon"><svg viewBox="0 0 24 24" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div>
+      <h3>Custom Packages</h3>
+      <p>Every event is different. We'll work with you on bay count, duration, food, drinks, and any extras to build a package that fits your group perfectly.</p>
+    </div>
+  </div>
+</div>
+
+<!-- THE SPACE -->
+<div class="event-section alt-bg">
+  <div class="event-section-inner">
+    <div class="event-split">
+      <img src="/images/fairways-and-dreams-simulator-bay.jpg" alt="Simulator bay at Fairways and Dreams" loading="lazy"/>
+      <div class="event-split-text reveal">
+        <div class="event-section-label">The Venue</div>
+        <h2>6 bays.<em> A full bar. One great night.</em></h2>
+        <p>Fairways & Dreams isn't just a simulator facility — it's a proper venue. Six TrackMan bays, a full bar and lounge area, a PuttView putting green, and a staff that makes every event run smoothly.</p>
+        <p>Every bay runs TrackMan 4, giving your guests access to the same technology used by the world's best players. Over 500 virtual courses available — play Augusta, St Andrews, Pebble Beach, and more.</p>
+        <div class="event-stats">
+          <div><div class="event-stat-num">6</div><div class="event-stat-label">Simulator Bays</div></div>
+          <div><div class="event-stat-num">500+</div><div class="event-stat-label">Virtual Courses</div></div>
+          <div><div class="event-stat-num">1</div><div class="event-stat-label">Full Bar</div></div>
+        </div>
+        <ul class="detail-list">
+          <li>Full facility exclusive hire available</li>
+          <li>TrackMan 4 on every bay</li>
+          <li>PuttView augmented reality putting green</li>
+          <li>Full bar and dedicated party area</li>
+          <li>PJ Whelihan's catering available</li>
+          <li>Staffed throughout your event</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CATERING -->
+<div class="event-section">
+  <div class="event-split">
+    <div class="event-split-text reveal">
+      <div class="event-section-label">Food & Drinks</div>
+      <h2>Catering by<em> PJ Whelihan's.</em></h2>
+      <p>We've partnered with PJ Whelihan's — one of the best-known names in Montgomery County — to bring full food service to your Fairways & Dreams event. Wings, sliders, loaded nachos, full platters — all delivered straight to your bays via QR code order.</p>
+      <p>Combine that with our full bar setup and you've got a complete food and drink experience without anyone having to leave the building.</p>
+      <ul class="detail-list">
+        <li>Full PJ Whelihan's menu available</li>
+        <li>Order by QR code directly to your bay</li>
+        <li>Full bar setup on-site</li>
+        <li>Pre-coordinate larger catering orders when you book</li>
+      </ul>
+      <a href="contact.html" class="btn btn-primary" style="margin-top:8px;">Discuss Your Event</a>
+    </div>
+    <img src="/images/fairways-and-dreams-bar-and-lounge-area.jpg" alt="Bar and lounge area at Fairways and Dreams" loading="lazy"/>
+  </div>
+</div>
+
+<!-- EVENT TYPES -->
+<div class="event-section alt-bg">
+  <div class="event-section-inner">
+    <div class="event-section-label">Event Types</div>
+    <h2>Perfect for<em> every occasion.</em></h2>
+    <div class="event-grid" style="margin-top:40px;">
+      <div class="event-card reveal">
+        <h3>Corporate Events</h3>
+        <p>Team-building, client hospitality, company parties. The combination of golf, bar, and private space gives corporate events a feel that a conference room never could.</p>
+      </div>
+      <div class="event-card reveal">
+        <h3>Birthday Parties</h3>
+        <p>Simulators, a full bar, great food, and your whole crew. Book the night and let the venue do the work — we've got everything you need for an unforgettable birthday.</p>
+      </div>
+      <div class="event-card reveal">
+        <h3>Bachelor & Bachelorette Parties</h3>
+        <p>Pre-game before the main event, or make Fairways & Dreams the whole night. Either way — great golf, great drinks, and the best group activity in the area.</p>
+      </div>
+      <div class="event-card reveal">
+        <h3>Golf Outings & Tournaments</h3>
+        <p>Run your own format on any of our 500+ courses. Skins, scrambles, stroke play, closest to the pin — we'll help you set up the competition and track the leaderboard.</p>
+      </div>
+      <div class="event-card reveal">
+        <h3>Private Lessons & Clinics</h3>
+        <p>Book our PGA Pro for a group coaching session. Great for corporate wellness events, junior programs, or just a group of friends who want to improve together.</p>
+      </div>
+      <div class="event-card reveal">
+        <h3>Holiday Parties</h3>
+        <p>Ditch the usual venue. A holiday party at Fairways & Dreams — simulators, bar, and great food — is the kind of thing people actually look forward to.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<div class="event-inquiry">
+  <h2>Ready to make it<em> a night to remember?</em></h2>
+  <p>Tell us about your group, your date, and what you're after. We'll put together a custom package and get back to you fast.</p>
+  <div class="btn-row">
+    <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+    <a href="membership.html" class="btn btn-outline-light">View Membership</a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <img src="/images/fd-logo.png" alt="Fairways &amp; Dreams" style="height:125px;width:auto;display:block;margin-bottom:14px;filter:brightness(0) invert(1);opacity:0.85;"/>
+      <p class="footer-tag">No gimmicks. Premium technology.<br>Real feedback. Better golf.</p>
+    </div>
+    <div>
+      <span class="footer-head">Navigate</span>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="membership.html">Membership</a></li>
+        <li><a href="facility.html">Facility Features</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="leagues.html">Leagues</a></li>
+        <li><a href="lessons.html">Lessons</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="gift-cards.html">Gift Cards</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <span class="footer-head">Visit Us</span>
+      <p style="font-size:14px;color:rgba(243,237,224,0.55);line-height:1.8;margin-bottom:20px;">200 Ridge Pike, Suite 206<br>Conshohocken, PA 19428</p>
+      <span class="footer-head">Hours</span>
+      <p style="font-size:14px;color:rgba(243,237,224,0.45);line-height:1.9;">Mon–Thu: 10AM–10PM<br>Friday: 10AM–11PM<br>Saturday: 9AM–11PM<br>Sunday: 9AM–7PM</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Fairways &amp; Dreams. All rights reserved.</span>
+    <span>200 Ridge Pike, Suite 206, Conshohocken, PA &nbsp;·&nbsp; 200 Ridge Pike, Conshohocken, PA</span>
+  </div>
+</footer>
+
+<script>
+  const btn = document.querySelector('.menu-btn');
+  const overlay = document.querySelector('.mobile-menu-overlay');
+  if (btn && overlay) {
+    btn.addEventListener('click', () => {
+      btn.classList.toggle('open');
+      overlay.classList.toggle('open');
+      document.body.classList.toggle('menu-open');
+    });
+  }
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+  }, { threshold: 0.1 });
+  reveals.forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
