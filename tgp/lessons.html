@@ -145,12 +145,50 @@ footer ul a:hover { color: var(--parchment); }
 .nav-dropdown-toggle { display: flex !important; align-items: center; gap: 5px; cursor: pointer; text-decoration: none; }
 .dropdown-arrow { transition: transform .2s ease; flex-shrink: 0; pointer-events: none; }
 .nav-dropdown:hover .dropdown-arrow { transform: rotate(180deg); }
-.nav-dropdown-menu { display: none; position: absolute; top: calc(100% + 8px); left: 50%; transform: translateX(-50%); background: #fff; border-radius: 10px; box-shadow: 0 8px 32px rgba(0,0,0,.14); min-width: 160px; padding: 6px 0; z-index: 9999; list-style: none; margin: 0; }
-.nav-dropdown-menu::before { content: ''; position: absolute; top: -5px; left: 50%; transform: translateX(-50%); border-left: 5px solid transparent; border-right: 5px solid transparent; border-bottom: 5px solid #fff; }
+.nav-dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 12px;
+  z-index: 9999;
+  list-style: none;
+  margin: 0;
+}
+.nav-dropdown-menu-inner {
+  background: #f9f6ef;
+  border-radius: 10px;
+  box-shadow: 0 8px 32px rgba(0,0,0,.13);
+  padding: 8px 0;
+  min-width: 160px;
+  position: relative;
+}
+.nav-dropdown-menu-inner::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #f9f6ef;
+}
 .nav-dropdown:hover .nav-dropdown-menu { display: block; }
 .nav-dropdown-menu li { margin: 0; padding: 0; }
-.nav-dropdown-menu li a { display: block !important; padding: 9px 18px !important; font-size: .82rem !important; letter-spacing: .06em; text-transform: uppercase; color: #1a2a1a !important; white-space: nowrap; transition: background .12s; background: transparent !important; }
-.nav-dropdown-menu li a:hover { background: #f5f2ed !important; }
+.nav-dropdown-menu li a {
+  display: block !important;
+  padding: 11px 20px !important;
+  font-size: .82rem !important;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: #1a2a1a !important;
+  white-space: nowrap;
+  transition: background .12s;
+  background: transparent !important;
+  line-height: 1 !important;
+}
+.nav-dropdown-menu li a:hover { background: #ede9e0 !important; }
 </style>
 </head>
 <body>
@@ -166,10 +204,22 @@ footer ul a:hover { color: var(--parchment); }
     <li class="nav-dropdown">
       <a href="about.html" class="nav-dropdown-toggle">About <svg class="dropdown-arrow" viewBox="0 0 10 6" width="10" height="6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
       <ul class="nav-dropdown-menu">
-        <li><a href="about.html">About TGP</a></li>
-        <li><a href="team.html">Our Team</a></li>
-        <li><a href="facility.html">The Facility</a></li>
+        <div class="nav-dropdown-menu-inner">
+          <li><a href="about.html">About TGP</a></li>
+          <li><a href="team.html">Our Team</a></li>
+          <li><a href="facility.html">The Facility</a></li>
+        </div>
       </ul>
+    </li>
+    <li><a href="membership.html">Membership</a></li>
+    <li><a href="leagues.html">Leagues</a></li>
+    <li><a href="lessons.html">Lessons</a></li>
+    <li><a href="events.html">Events</a></li>
+    <li><a href="host-an-event.html">Host an Event</a></li>
+    <li><a href="gift-cards.html">Gift Cards</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="book.html" class="nav-book">Book Now</a></li>
+  </ul>
     </li>
     <li><a href="membership.html">Membership</a></li>
     <li><a href="leagues.html">Leagues</a></li>
